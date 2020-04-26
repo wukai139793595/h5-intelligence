@@ -1,0 +1,94 @@
+.home{
+  .van-swipe{
+    img{
+      width: 100%;
+    }
+    /deep/ .van-swipe__indicators{
+      .van-swipe__indicator{
+        width: 12px;
+        height: 12px;
+        background: rgba(255,255,255,.5);
+        border-radius: 100px;
+        margin-right: 18px;
+        &.van-swipe__indicator--active{
+          background: rgba(255,255,255,.9);
+          width: 24px;
+        }
+      }
+    }
+  }
+  .nav{
+    padding: 30px;
+    li{
+      height: 145px;
+      line-height: 145px;
+      border-radius: 100px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.1);
+      background-color: #fff;
+      margin-bottom: 22px;
+      padding: 0 25px 0 45px;
+      position: relative;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      a{
+        font-size: 30px;
+        color: #151618;
+        display: block;
+        .iconfont{
+          display: inline-block;
+          width: 75px;
+          height: 75px;
+          line-height: 75px;
+          text-align: center;
+          vertical-align: top;
+          font-size: 40px;
+          color: #fff;
+          border-radius: 100px;
+          vertical-align: middle;
+          margin-right:30px;
+        }
+        .van-icon{
+          position: absolute;
+          right:25px;
+          top:50%;
+          margin-top:-17.5px;
+          border:1px solid #c2c2c2;
+          color: #c2c2c2;
+          border-radius: 50%;
+          font-size: 18px;
+          width: 35px;
+          height: 35px;
+          line-height: 35px;
+          text-align: center;
+          display: block;
+        }
+      }
+      &:nth-of-type(1){
+        .iconfont{
+          background: linear-gradient(to right bottom,#01b2c0,#04d1e1);
+        }
+      }
+      &:nth-of-type(2){
+        .iconfont{
+          background: linear-gradient(to right bottom,#0d93ff,#22c3ff);
+        }
+      }
+      &:nth-of-type(3){
+        .iconfont{
+          background: linear-gradient(to right bottom,#ff8f2d,#ffb533);
+        }
+      }
+      &:nth-of-type(4){
+        .iconfont{
+          background: linear-gradient(to right bottom,#5c71fe,#7a8dff);
+        }
+      }
+      &:nth-of-type(5){
+        .iconfont{
+          background: linear-gradient(to right bottom,#ff5855,#ff714d);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+#productHome {
+    .mask {
+        position: absolute;
+        left:0;
+        right:0;
+        bottom:0;
+        top:200px;
+        background:rgba(0,0,0,0.2);
+
+    }
+  .part{
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 20px 30px;
+    // overflow:hidden;
+    label{
+        color:#909092;
+        .iconfont{
+            vertical-align: middle;
+            margin: -2px 10px 0 0;
+            color: #909092;
+            font-size: 30px;
+            display: inline-block;
+        }
+    }
+  }
+  .part-jjfa-1{
+      position: relative;
+      z-index: 1;
+    .outer-li{
+        line-height: 72px;
+        min-height: 72px;
+        padding-left: 170px;
+        &.inputFocus {
+            position: relative;
+            padding-left:0;
+            padding-right:200px;
+            
+            .icon-sousuo {
+                position: absolute;
+                left:22px;
+                top:2px;
+                font-size: 30px;
+                color:#aaa;
+            }
+            .van-field {
+                padding-left:65px;
+                border-radius: 100px 0 0 100px;
+                border-right-width: 0;
+            }
+            .van-button {
+                position: absolute;
+                right:calc(200px - 118px);
+                top:0;
+                width:120px;
+                padding:0;
+                line-height: 72px;
+                height:auto;
+                border-radius: 0 100px 100px 0;
+            }
+            .cancel {
+                position: absolute;
+                right:0;
+                top:0;
+                padding:0 10px;
+                font-size: 24px;
+            }
+        }
+        .search-wrap{
+           position: relative;
+            z-index: 1;
+            .van-search__content{
+                padding-left: 0;
+            }
+            .auto-box{
+                position: absolute;
+                left: 0;
+                top: 76px;
+                z-index: 1;
+                width: 96%;
+                background-color: #fff;
+                border: 1px solid #eee;
+                margin-left: 2%;
+                li:not(:last-child) {
+                    border-bottom: 1px solid #eee;
+                }
+                li{
+                    text-indent: 10px;
+                }
+                
+            }
+        }
+        label{
+            font-size: 28px;
+            margin-left: -170px;
+            float:left;
+        }
+        .van-field{
+            width: 100%;
+            vertical-align: middle;
+            border:1px solid #e1e2e3;
+            border-radius: 100px;
+            line-height: 50px;
+            padding:11px 15px;
+            display: inline-block;
+            font-size: 24px;
+            color:#333;
+        }
+        .van-search{
+            padding: 0;
+            /deep/.van-field__left-icon{
+                display: none;
+            }
+            
+        }
+        .van-search.search_err{
+            /deep/.van-cell{
+
+                border: 1px solid red;
+            }
+        }
+    }
+  }
+}
